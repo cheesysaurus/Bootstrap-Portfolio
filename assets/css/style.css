@@ -329,28 +329,20 @@ footer {
 	/**
 	/* Section
 	**/
-	/**
-	/* Header
-	**/
-	#name-bg {
-		margin-left: 25px;
-	}
-	nav {
-		margin-right: 23px;
-	}
-
-	/**
-	/* Section
-	**/
 	.section-sidebar {
-		display: block;
-		width: 100vh;
-		margin: auto;
+		margin-left: -100px;
 	}
 
+	section {
+		max-width: 100%;
+	}
+
+	}
 	.section-div {
-		width: 715px;
-		margin: auto 25px 40px;
+		clear: both;
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
 	}
 
 	h2 {
@@ -359,14 +351,20 @@ footer {
 
 	/* About */
 	#prof-img {
+		float: left;
 		width: 180px;
-		clip-path: inset(15px 0 35px 0);
-		margin-top: -5px;
-		margin-bottom: -30px;
+		clip-path: none;
+		margin-top: 10px;
+		margin-right: 25px;
+		margin-bottom: 10px;
 	}
 
 	section p {
 		line-height: 30px;
+	}
+
+	section p:last-child {
+		margin-bottom: -40px;
 	}
 
 	/* Portfolio */
@@ -379,12 +377,17 @@ footer {
 	}
 
 	.gallery {
+		width: 645px;
 		margin-top: 15px;
-		margin-left: 10px;
+		margin-left: -15px;
+	}
+
+	.gallery a {
+		display: inline-block;
+		margin-bottom: 10px;
 	}
 
 	.gallery img {
-		margin-bottom: -10px;
 		width: 280px;
 		height: 200px;
 	}
@@ -394,7 +397,6 @@ footer {
 		height: 40px;
 		bottom: 40px;
 	}
-
 	figcaption {
 		padding-top: 3.6%;
 	}
@@ -402,11 +404,7 @@ footer {
 	/**
 	/* Aside
 	**/
-	aside {
-		float: none;
-		max-width: 100%;
-		margin: 0;
-	}
+	/* ?????? */
 
 }
 
@@ -450,6 +448,7 @@ footer {
 	}
 
 	.section-div {
+		width: 100%;
 		padding: 0;
 	}
 
@@ -459,7 +458,7 @@ footer {
 
 	/* About */
 	#prof-img {
-	
+		width: 100%;
 	}
 
 	section p {
@@ -476,13 +475,18 @@ footer {
 	}
 
 	.gallery {
+		width: 100%;
 		margin-left: -18px;
+	}
+
+	.gallery a {
+		width: 100%;
+		display: block;
 	}
 
 	.gallery img {
 		margin-bottom: -15px;
-		width: 280px;
-		height: 200px;
+		width: 100%;
 	}
 
 	.caption-div {
@@ -498,9 +502,6 @@ footer {
 	/**
 	/* Aside
 	**/
-	.aside-div {
-		margin: 0 5px;
-	}
 
 	h3 {
 		text-align: center;
